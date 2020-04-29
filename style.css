@@ -16,7 +16,7 @@
 			
 		}
 
-		#text {
+		#quote-div {
 			text-align: center;
 			display: flex;
 			justify-content: center;
@@ -24,8 +24,16 @@
 			padding: 50px 50px 10px 50px;
 
 		}
+		#text {
+			font-size: 1.8em;
+		}
 
 		#author {
+			font-size: 1.3em;
+			font-style: italic;
+		}
+
+		#author-div {
 			margin-bottom: 11px;
 	
 		}
