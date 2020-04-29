@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<title>Stoic Quotes App</title>
+	<style>
+
+		body {
+			background: url(https://1.bp.blogspot.com/-7fYe8a1SWCQ/WcFN3i1iktI/AAAAAAAAE20/Tp1REgcp6uAqEvWrs7Pa7nJlP8NAGfBDwCLcBGAs/s1600/7.jpg) no-repeat center center fixed; 
+  			background-size: cover;
+
+		}	
+
+		#quote-box {
+			position: fixed;
+ 			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+			width:450px;
+			background-color: white;
+			border-radius: 10px;
+			
+		}
+
+		#text {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 50px 50px 10px 50px;
+
+		}
+
+		#author {
+			text-align: right;
+			margin-bottom: 20px;
+			margin-right: 10px;
+		}
+		#share-buttons {
+			text-align: center;
+		}
+		#new-quote {
+			text-align: right;
+			margin-right: 25px;
+			
+		}
+
+		#lower-row {
+			height: 70px;
+		}
+
+
+		h1 {
+			font-size: 25px;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<div id="quote-box" class="container-fluid">
+		<div id="text" class="row justify-content-center"><h1>The whole future lies in uncertainty: live immediately.</h1></div>
+		<div id="author"><h4>- Seneca</h4></div>
+		<div id="lower-row" class="row">
+			<div id="share-buttons" class="col align-self-center"><button>FB</button> <button><a id="tweet-quote">TW</a></button> <button>WAPP</button></div>
+			<div id="new-quote" class="col align-self-center"><button>next quote</button></div>
+		</div>
+    </div>
+</body>
+</html>
