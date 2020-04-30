@@ -11,11 +11,11 @@ function timeFunction() {
 		let quoteAuthId = data.data[numeroACaso].relationships.author.data.id;
 		let objAuth = data.included.filter( autor => autor.id == quoteAuthId);
 		let currentA = objAuth[0].attributes.name;
-		$('#text').html(currentQ);
-		$("#author").html(currentA);
+		$('#text').html('"' + currentQ + '"');
+		$("#author").html('- ' +currentA);
 
 	});
-}, 650);
+}, 500);
         };
 
 
@@ -23,25 +23,29 @@ function timeFunction() {
 $(document).ready(function() {
 
 	function fadingIn() {
-		$("#text").fadeIn(600).toggleClass('hidden');
+		$("#text").fadeIn(600);
 		$("#author").fadeIn(600);						
+	}	
+
+	function firstFadingIn() {
+		$("#text").fadeIn(1500);
+		$("#author").fadeIn(1500);						
 	}	
 
 
 	function fadingOut() {
-		$("#text").fadeOut(600).toggleClass('hidden');
-		$("#author").fadeOut(600);						
+		$("#text").fadeOut(900);
+		$("#author").fadeOut(900);						
 	}
 	
 	$(".btn").on("click", function() {
 		fadingOut();
-		setTimeout(function() {
-			fadingIn();
-			}, 699);
+		fadingIn();
 		
 	});
 	
-	fadingIn();
+	firstFadingIn();
+
 
 	$('#tweet-quote').on('click', function() {
 		let currentQuote = $("#text").text();
