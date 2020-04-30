@@ -66,3 +66,47 @@
   			display: none;
 		}
 		
+
+@media screen and (max-width: 375px) {	
+  #quote-box {
+			position: fixed;
+ 			top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+			width: 100vw;
+			background-color: white;
+			border-radius: 10px;
+			
+		}
+  
+  #lower-row {
+			height: 70px;
+      font-size: 0.8rem;
+		}
+  
+  .social {
+			margin: 4px;
+			color: black;
+		}
+  
+  #new-quote {
+    margin-bottom: 10px;
+    font-size: 13px;
+    margin: auto;
+  }
+  
+  #new-quote-div {
+			text-align: right;
+			margin-right: 5px;
+			
+		}
+  #text {
+			font-size: 1.5em;
+		}
+
+		#author {
+			font-size: 1.2em;
+			font-style: italic;
+		}
+  
+}
