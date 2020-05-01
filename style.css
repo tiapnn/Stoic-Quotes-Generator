@@ -1,112 +1,116 @@
-		body {
-			background: url(https://1.bp.blogspot.com/-7fYe8a1SWCQ/WcFN3i1iktI/AAAAAAAAE20/Tp1REgcp6uAqEvWrs7Pa7nJlP8NAGfBDwCLcBGAs/s1600/7.jpg) no-repeat center center fixed; 
-  			background-size: cover;
-  			font-family: 'Cinzel', serif;
+body {
+	background: url(https://1.bp.blogspot.com/-7fYe8a1SWCQ/WcFN3i1iktI/AAAAAAAAE20/Tp1REgcp6uAqEvWrs7Pa7nJlP8NAGfBDwCLcBGAs/s1600/7.jpg) no-repeat center center fixed; 
+  	background-size: cover;
+  	font-family: 'Cinzel', serif;
+}	
 
-		}	
+#quote-box {
+	position: fixed;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width:475px;
+	background-color: white;
+	border-radius: 10px;		
+}
 
-		#quote-box {
-			position: fixed;
- 			top: 50%;
-  			left: 50%;
-  			transform: translate(-50%, -50%);
-			width:475px;
-			background-color: white;
-			border-radius: 10px;
-			
-		}
+#quote-div {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 50px 10px 50px;
+}
 
-		#quote-div {
-			text-align: center;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding: 50px 50px 10px 50px;
+#text {
+	font-size: 1.8em;
+}
 
-		}
-		#text {
-			font-size: 1.8em;
-		}
+#author {
+	font-size: 1.3em;
+	font-style: italic;
+}
 
-		#author {
-			font-size: 1.3em;
-			font-style: italic;
-		}
+#author-div {
+	margin-bottom: 11px;
+}
 
-		#author-div {
-			margin-bottom: 11px;
-	
-		}
+#share-buttons {
+	text-align: center;
+}
 
-		#share-buttons {
-			text-align: center;
-			
-		}
+#new-quote {
+	text-align: right;
+	margin-right: 25px;	
+}
 
-		#new-quote {
-			text-align: right;
-			margin-right: 25px;
-			
-		}
+#lower-row {
+	height: 70px;
+}
 
-		#lower-row {
-			height: 70px;
-		}
+.social {
+	margin: 6px;
+	color: black;
+	}
 
-		.social {
-			margin: 6px;
-			color: black;
-		}
+.social:hover {
+	color:	rgb(56,56,56)
+}
 
-		.social:hover {
-			color:	rgb(56,56,56)
-		}
-
-		.hidden {
-  			display: none;
-		}
+.hidden {
+	display: none;
+}
 		
 
-@media screen and (max-width: 375px) {	
-  #quote-box {
-			position: fixed;
- 			top: 50%;
+@media screen and (max-width: 500px) {	
+  	
+  	#quote-box {
+		position: fixed;
+ 		top: 50%;
   		left: 50%;
   		transform: translate(-50%, -50%);
-			width: 100vw;
-			background-color: white;
-			border-radius: 10px;
-			
-		}
+		width: 100vw;
+		background-color: white;
+		border-radius: 10px;	
+	}
   
-  #lower-row {
-			height: 70px;
-      font-size: 0.8rem;
-		}
+  	#lower-row {
+		height: 70px;
+      	font-size: 0.8em;
+	}
   
-  .social {
-			margin: 4px;
-			color: black;
-		}
+  	.social {
+		margin: 4px;
+		color: black;
+	}
   
-  #new-quote {
-    margin-bottom: 10px;
-    font-size: 13px;
-    margin: auto;
-  }
+  	#new-quote {
+    	margin-bottom: 10px;
+    	font-size: 13px;
+    	margin: auto;
+  	}
   
-  #new-quote-div {
-			text-align: right;
-			margin-right: 5px;
-			
-		}
-  #text {
-			font-size: 1.5em;
-		}
+  	#new-quote-div {
+		text-align: right;
+		margin-right: 5px;
+	}
 
-		#author {
-			font-size: 1.2em;
-			font-style: italic;
-		}
+ 	#text {
+		font-size: 1.5em;
+	}
+
+	#author {
+		font-size: 1.2em;
+		font-style: italic;
+	}
   
+}
+
+@media screen and (max-width: 325px) {	
+
+ 	.social {
+		margin: 1px;
+		color: black;
+	}
+	
 }
